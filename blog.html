@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Satya Pratheek TATA</title>
+    <meta name="description" content="Insights and thoughts on AI, machine learning, technology, and personal experiences">
+    <meta name="keywords" content="Blog, AI, Machine Learning, Technology, Personal Insights">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog - Satya Pratheek TATA">
+    <meta property="og:description" content="Insights and thoughts on AI, machine learning, technology, and personal experiences">
+    <meta property="og:image" content="assets/images/blog-og.jpg">
+    <meta property="og:url" content="https://tatasatyapratheek.github.io/PortfolioWebsite/blog.html">
+    <meta property="og:type" content="website">
+</head>
+<body class="preload">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+        <div class="container">
+            <h1 class="page-title">Blog</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Blog Introduction -->
+        <section class="blog-intro">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Exploring Technology & Insights</h2>
+                    <p class="section-subtitle">
+                        A collection of thoughts on AI, data science, and technology
+                    </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <p class="lead text-center">
+                            Dive into my perspectives on cutting-edge technologies, 
+                            personal experiences, and the intersection of science and innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Blog Grid Section -->
+        <section class="blog-grid-section">
+            <div class="container">
+                <!-- Blogs will be loaded dynamically -->
+                <div class="row" id="blogs-container">
+                    <!-- Skeleton loaders will appear while content loads -->
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div id="skeleton-blog-1"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div id="skeleton-blog-2"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div id="skeleton-blog-3"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mb-4">
+                        <div id="skeleton-blog-4"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section bg-alt">
+            <div class="container">
+                <div class="cta-content text-center">
+                    <h2>Stay Connected</h2>
+                    <p>Want to discuss technology, AI, or collaborate on interesting projects?</p>
+                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle between dark and light themes" data-tooltip="Toggle Theme">
+        <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/cache.js"></script>
+    <script src="js/core/theme.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/loader.js"></script>
+    <script src="js/modules/blogs.js"></script>
+    <script src="js/core/init.js"></script>
+</body>
+</html>
