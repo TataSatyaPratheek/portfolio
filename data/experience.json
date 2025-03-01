@@ -1,0 +1,92 @@
+[
+    {
+      "id": "skillbanc-internship",
+      "company": "Skillbanc.com",
+      "role": "Software Engineering and Data Science Intern",
+      "location": "Remote",
+      "startDate": "2024-08-01",
+      "endDate": "Present",
+      "duration": "Aug 2024 – Present",
+      "isCurrent": true,
+      "companyLogo": "assets/images/skillbanc-logo.png",
+      "companyUrl": "https://skillbanc.com",
+      "description": "Leading the development of AI-driven educational tools and predictive models to enhance learning outcomes.",
+      "responsibilities": [
+        "Developed an adaptive learning AI tutor that personalizes content based on user performance and learning patterns",
+        "Created predictive models to forecast student engagement and performance, improving retention by 27%",
+        "Led the design and prototyping of a smart helmet for athletic performance monitoring with real-time feedback",
+        "Implemented data visualization dashboards for educational metrics using PowerBI and custom D3.js components"
+      ],
+      "achievements": [
+        "Successfully deployed AI tutor system serving over 1,000 active students",
+        "Presented smart helmet prototype at internal innovation showcase, securing additional development funding",
+        "Improved model accuracy for student performance prediction from 71% to 86% using ensemble methods"
+      ],
+      "skills": ["Python", "XGBoost", "SQL", "PowerBI", "Flutter", "Machine Learning"],
+      "projects": ["Skillbanc AI Tutor", "Smart Helmet Prototype"],
+      "testimonial": {
+        "text": "Satya has demonstrated exceptional technical skills and innovative thinking in his work on our adaptive learning system.",
+        "author": "Dr. Anand Sharma",
+        "position": "Chief Innovation Officer, Skillbanc"
+      }
+    },
+    {
+      "id": "edhec-cracow",
+      "company": "EDHEC Cracow Learning Expedition",
+      "role": "Technology Strategy Track",
+      "location": "Cracow, Poland",
+      "startDate": "2024-04-01",
+      "endDate": "2024-04-30",
+      "duration": "April 2024",
+      "isCurrent": false,
+      "companyLogo": "assets/images/edhec-logo.png",
+      "companyUrl": "https://www.edhec.edu",
+      "description": "Participated in an intensive program focused on strategic technology implementation and lean methodology application.",
+      "responsibilities": [
+        "Engaged in workshops on Lean Strategy and its application to technology product development",
+        "Collaborated with international teams to develop strategic software implementation plans",
+        "Analyzed case studies of successful technology transformation initiatives",
+        "Conducted field research with local technology companies on innovation practices"
+      ],
+      "achievements": [
+        "Developed a comprehensive technology implementation framework adopted by the program coordinator",
+        "Received excellence recognition for final project presentation on EdTech integration strategy"
+      ],
+      "skills": ["Strategic Planning", "Lean Methodology", "Technology Implementation"],
+      "projects": [],
+      "testimonial": null
+    },
+    {
+      "id": "niser-research",
+      "company": "NISER",
+      "role": "Student Researcher - Deep Learning",
+      "location": "Bhubaneswar, India",
+      "startDate": "2021-08-01",
+      "endDate": "2023-05-31",
+      "duration": "Aug 2021 - May 2023",
+      "isCurrent": false,
+      "companyLogo": "assets/images/niser-logo.png",
+      "companyUrl": "https://www.niser.ac.in/",
+      "description": "Conducted research on applying theoretical physics principles to improve neural network architecture and performance.",
+      "responsibilities": [
+        "Developed novel neural network architectures based on Schwinger-Dyson formalism from theoretical physics",
+        "Implemented and tested multilayer perceptron networks with modified optimization algorithms",
+        "Analyzed performance improvements in convergence speed and generalization capacity",
+        "Collaborated with physics and computer science faculty on interdisciplinary research"
+      ],
+      "achievements": [
+        "Improved training efficiency of standard neural networks by 15% using physics-inspired regularization techniques",
+        "Presented research findings at two departmental seminars",
+        "Developed a Python library implementing the proposed techniques"
+      ],
+      "skills": ["Theoretical Physics", "Schwinger-Dyson Formalism", "MLP Networks", "Python", "TensorFlow"],
+      "projects": [],
+      "publications": [
+        {
+          "title": "Applications of Schwinger-Dyson Equations in Deep Neural Networks",
+          "venue": "NISER Technical Reports",
+          "year": "2022"
+        }
+      ]
+    }
+  ]

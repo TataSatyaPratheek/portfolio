@@ -1,0 +1,108 @@
+<!-- List Skeleton Loader -->
+<div class="list-skeleton" aria-hidden="true">
+    <div class="skeleton-item">
+        <div class="skeleton-item-icon"></div>
+        <div class="skeleton-item-content">
+            <div class="skeleton-item-title"></div>
+            <div class="skeleton-item-text"></div>
+        </div>
+    </div>
+    <div class="skeleton-item">
+        <div class="skeleton-item-icon"></div>
+        <div class="skeleton-item-content">
+            <div class="skeleton-item-title"></div>
+            <div class="skeleton-item-text"></div>
+        </div>
+    </div>
+    <div class="skeleton-item">
+        <div class="skeleton-item-icon"></div>
+        <div class="skeleton-item-content">
+            <div class="skeleton-item-title"></div>
+            <div class="skeleton-item-text"></div>
+        </div>
+    </div>
+    <div class="skeleton-item">
+        <div class="skeleton-item-icon"></div>
+        <div class="skeleton-item-content">
+            <div class="skeleton-item-title"></div>
+            <div class="skeleton-item-text"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* List Skeleton Specific Styles */
+.list-skeleton {
+    width: 100%;
+}
+
+.skeleton-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--card-bg);
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.skeleton-item-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    background-color: var(--bg-tertiary);
+}
+
+.skeleton-item-content {
+    flex: 1;
+}
+
+.skeleton-item-title {
+    height: 1.25rem;
+    width: 60%;
+    background-color: var(--bg-tertiary);
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.skeleton-item-text {
+    height: 0.875rem;
+    width: 90%;
+    background-color: var(--bg-tertiary);
+    border-radius: 0.25rem;
+}
+
+/* Shimmer animation */
+.skeleton-item, .skeleton-item-icon, .skeleton-item-title, .skeleton-item-text {
+    position: relative;
+    overflow: hidden;
+}
+
+.skeleton-item::after, 
+.skeleton-item-icon::after, 
+.skeleton-item-title::after, 
+.skeleton-item-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0,
+        rgba(255, 255, 255, 0.1) 20%,
+        rgba(255, 255, 255, 0.2) 60%,
+        rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+</style>

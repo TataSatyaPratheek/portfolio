@@ -1,0 +1,309 @@
+/*
+ * forms.css - Styles for forms and inputs
+ */
+
+/* Form Container */
+.form-container {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+  
+  /* Required field indicator */
+  .form-label.required::after {
+    content: '*';
+    color: var(--color-danger);
+    margin-left: 0.25rem;
+  }
+  
+  /* Input styles */
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--border-color);
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-focus);
+  }
+  
+  /* For textarea */
+  textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  /* Input placeholders */
+  .form-control::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
+  
+  /* Validation states */
+  .form-control.is-invalid {
+    border-color: var(--color-danger);
+  }
+  
+  .form-control.is-valid {
+    border-color: var(--color-success);
+  }
+  
+  .invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--color-danger);
+  }
+  
+  /* Form buttons */
+  .form-btn-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Alert styles for form messages */
+  .alert {
+    padding: 1rem;
+    border-radius: 0.375rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .alert-success {
+    background-color: rgba(74, 222, 128, 0.1);
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+  }
+  
+  .alert-danger {
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid var(--color-danger);
+    color: var(--color-danger);
+  }
+  
+  .alert-info {
+    background-color: rgba(14, 165, 233, 0.1);
+    border: 1px solid var(--color-info);
+    color: var(--color-info);
+  }
+  
+  .alert-warning {
+    background-color: rgba(245, 158, 11, 0.1);
+    border: 1px solid var(--color-warning);
+    color: var(--color-warning);
+  }
+  
+  /* Checkboxes and Radio buttons */
+  .form-check {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    padding-left: 1.75rem;
+    position: relative;
+  }
+  
+  .form-check-input {
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--color-accent);
+  }
+  
+  .form-check-label {
+    cursor: pointer;
+    color: var(--text-primary);
+  }
+  
+  /* Custom styled checkbox */
+  .custom-checkbox {
+    position: relative;
+    padding-left: 2rem;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-checkbox:hover input ~ .checkmark {
+    background-color: var(--bg-tertiary);
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .custom-checkbox .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  /* Form feedback spinner */
+  .feedback-spinner {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 3px solid var(--bg-tertiary);
+    border-radius: 50%;
+    border-top-color: var(--color-accent);
+    animation: spin 1s linear infinite;
+    margin-right: 0.75rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Form skeleton loading state */
+  .form-skeleton .skeleton-label,
+  .form-skeleton .skeleton-input,
+  .form-skeleton .skeleton-textarea,
+  .form-skeleton .skeleton-button {
+    background-color: var(--bg-tertiary);
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .form-skeleton .skeleton-label {
+    height: 1rem;
+    width: 30%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-skeleton .skeleton-input {
+    height: 3rem;
+    width: 100%;
+  }
+  
+  .form-skeleton .skeleton-textarea {
+    height: 150px;
+    width: 100%;
+  }
+  
+  .form-skeleton .skeleton-button {
+    height: 3rem;
+    width: 8rem;
+    margin-top: 1rem;
+  }
+  
+  /* Apply shimmer animation to form skeletons */
+  .form-skeleton .skeleton-label::after,
+  .form-skeleton .skeleton-input::after,
+  .form-skeleton .skeleton-textarea::after,
+  .form-skeleton .skeleton-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.1) 20%,
+      rgba(255, 255, 255, 0.2) 60%,
+      rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 2s infinite;
+  }
+  
+  /* Accessibility enhancements */
+  .form-control:focus-visible {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 1px;
+  }
+  
+  .form-control[aria-invalid="true"] {
+    border-color: var(--color-danger);
+  }
+  
+  /* High contrast focus for form elements */
+  input:focus, 
+  textarea:focus, 
+  select:focus, 
+  button:focus {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 2px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .form-container {
+      padding: 1.5rem;
+    }
+    
+    .form-btn-group {
+      flex-direction: column;
+    }
+    
+    .form-btn-group .btn {
+      width: 100%;
+    }
+  }

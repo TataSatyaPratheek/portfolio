@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Satya Pratheek TATA</title>
+    <meta name="description" content="Explore my portfolio of projects in AI, machine learning, data science, and software engineering.">
+    <meta name="keywords" content="Projects, Portfolio, Data Science, AI, Machine Learning, Software Engineering">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Projects - Satya Pratheek TATA">
+    <meta property="og:description" content="Explore my portfolio of projects in AI, machine learning, data science, and software engineering.">
+    <meta property="og:image" content="assets/images/projects-og.jpg">
+    <meta property="og:url" content="https://tatasatyapratheek.github.io/PortfolioWebsite/projects.html">
+    <meta property="og:type" content="website">
+</head>
+<body class="preload">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+        <div class="container">
+            <h1 class="page-title">My Projects</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Projects Introduction -->
+        <section class="projects-intro">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Project Showcase</h2>
+                    <p class="section-subtitle">
+                        A collection of my work across various domains
+                    </p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-10 mx-auto">
+                        <p class="lead text-center">
+                            These projects demonstrate my approach to problem-solving, technical skills, and ability to deliver impactful solutions.
+                            Each project represents a unique challenge and learning opportunity.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Project Filters -->
+                <div class="projects-filter text-center">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Artificial Intelligence">AI</button>
+                    <button class="filter-btn" data-filter="Data Science">Data Science</button>
+                    <button class="filter-btn" data-filter="IoT">IoT</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Grid Section -->
+        <section class="projects-grid-section">
+            <div class="container">
+                <!-- Projects will be loaded dynamically -->
+                <div class="row" id="projects-container">
+                    <!-- Skeleton loaders will appear while content loads -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div id="skeleton-project-1"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div id="skeleton-project-2"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div id="skeleton-project-3"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div id="skeleton-project-4"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div id="skeleton-project-5"></div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div id="skeleton-project-6"></div>
+                    </div>
+                </div>
+                
+                <!-- Load More Button (if needed) -->
+                <div class="text-center mt-4">
+                    <button id="load-more-projects" class="btn btn-outline">
+                        <span class="btn-text">Load More</span>
+                        <span class="btn-loader d-none">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Collaboration Section -->
+        <section class="collaboration-section bg-alt">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="collaboration-image">
+                            <img src="assets/images/collaboration.jpg" alt="Collaborative work environment" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="collaboration-content">
+                            <h2>Open to Collaboration</h2>
+                            <p>I believe in the power of collaborative work and open-source contribution. If you have an interesting project idea or are looking for a collaborator, I'd love to hear from you.</p>
+                            <p>My interdisciplinary background enables me to contribute effectively to diverse projects spanning AI, data science, physics, and software engineering.</p>
+                            <a href="contact.html" class="btn btn-primary">Let's Connect</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle between dark and light themes" data-tooltip="Toggle Theme">
+        <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/cache.js"></script>
+    <script src="js/core/theme.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/loader.js"></script>
+    <script src="js/modules/projects.js"></script>
+    <script src="js/core/init.js"></script>
+</body>
+</html>

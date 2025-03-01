@@ -1,0 +1,355 @@
+/*
+ * cards.css - Styles for various card components
+ */
+
+/* Base Card Style */
+.card {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .card:hover, 
+  .card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+  }
+  
+  .card-img-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 60%; /* 5:3 aspect ratio */
+  }
+  
+  .card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .card:hover .card-img-top,
+  .card:focus-within .card-img-top {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .card-text {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  
+  /* Project Card */
+  .project-card .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-radius: 2rem;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .badge-primary {
+    background-color: var(--color-accent);
+    color: var(--text-on-accent);
+  }
+  
+  .featured-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--color-accent);
+    color: var(--text-on-accent);
+    padding: 0.3rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  /* Blog Card */
+  .blog-card .date-badge {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    padding: 0.3rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .blog-card .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  /* Feature Card (for about section) */
+  .feature-card {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+  }
+  
+  .feature-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--bg-tertiary);
+    color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover .feature-icon {
+    background-color: var(--color-accent);
+    color: var(--text-on-accent);
+    transform: rotateY(180deg);
+  }
+  
+  .feature-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+  }
+  
+  .feature-card p {
+    color: var(--text-secondary);
+  }
+  
+  /* Skill Card */
+  .skill-item {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px var(--shadow-color);
+  }
+  
+  .skill-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover .skill-icon {
+    transform: scale(1.1);
+  }
+  
+  .skill-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+  }
+  
+  .skill-projects {
+    margin-top: 1rem;
+  }
+  
+  .skill-projects small {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skill-projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .skill-project-link {
+    font-size: 0.875rem;
+    color: var(--color-accent);
+  }
+  
+  .skill-project-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Card Skeleton for loading state */
+  .card-skeleton {
+    position: relative;
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    height: 100%;
+    box-shadow: 0 4px 10px var(--shadow-color);
+  }
+  
+  .skeleton-image {
+    padding-top: 60%;
+    background-color: var(--bg-tertiary);
+  }
+  
+  .skeleton-body {
+    padding: 1.5rem;
+  }
+  
+  .skeleton-title,
+  .skeleton-text,
+  .skeleton-badge,
+  .skeleton-button {
+    background-color: var(--bg-tertiary);
+    border-radius: 0.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .skeleton-title {
+    height: 1.5rem;
+    width: 80%;
+  }
+  
+  .skeleton-text {
+    height: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skeleton-text:nth-child(3) {
+    width: 90%;
+  }
+  
+  .skeleton-text:nth-child(4) {
+    width: 75%;
+  }
+  
+  .skeleton-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+  
+  .skeleton-badge {
+    height: 1rem;
+    width: 3rem;
+    border-radius: 2rem;
+  }
+  
+  .skeleton-button {
+    height: 2.5rem;
+    width: 8rem;
+    margin-top: 1rem;
+  }
+  
+  /* Pulsing animation for skeletons */
+  .card-skeleton {
+    position: relative;
+  }
+  
+  .card-skeleton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.1) 20%,
+      rgba(255, 255, 255, 0.2) 60%,
+      rgba(255, 255, 255, 0)
+    );
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Accessibility enhancements */
+  .card a:focus {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+  
+  /* Make all card controls fully accessible */
+  .card .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Ensure proper contrast for all text */
+  .card-title, .card-subtitle {
+    color: var(--text-primary);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .card-body {
+      padding: 1.25rem;
+    }
+    
+    .card-title {
+      font-size: 1.15rem;
+    }
+  }

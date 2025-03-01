@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Satya Pratheek TATA</title>
+    <meta name="description" content="Detailed information about a specific project from my portfolio.">
+    <meta name="keywords" content="Project Details, Portfolio, Data Science, AI, Machine Learning">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+    
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Dynamic Open Graph Meta Tags will be updated via JavaScript -->
+    <meta property="og:title" content="Project Details - Satya Pratheek TATA">
+    <meta property="og:description" content="Detailed information about a specific project from my portfolio.">
+    <meta property="og:image" content="assets/images/projects-og.jpg">
+    <meta property="og:url" content="https://tatasatyapratheek.github.io/PortfolioWebsite/project-detail.html">
+    <meta property="og:type" content="website">
+</head>
+<body class="preload">
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header"></header>
+    
+    <!-- Page Title Section -->
+    <section class="page-title-section">
+        <div class="container">
+            <h1 class="page-title" id="project-title">Project Details</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="projects.html">Projects</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" id="project-breadcrumb-title">Project Details</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Project detail content will be loaded dynamically -->
+            <div class="project-detail-content">
+                <!-- Skeleton loader will appear while content loads -->
+                <div id="project-detail-skeleton"></div>
+                
+                <!-- Error message container -->
+                <div id="project-error" class="d-none"></div>
+                
+                <!-- Actual content will be inserted here -->
+                <article class="project-article d-none">
+                    <!-- Featured Image -->
+                    <div class="featured-image-container">
+                        <img id="project-image" src="" alt="" class="img-fluid">
+                    </div>
+                    
+                    <!-- Project Metadata -->
+                    <div class="project-metadata">
+                        <div class="metadata-item">
+                            <i class="fas fa-calendar" aria-hidden="true"></i>
+                            <span id="project-date">Date</span>
+                        </div>
+                        <div class="metadata-item">
+                            <i class="fas fa-folder" aria-hidden="true"></i>
+                            <span id="project-category">Category</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Description -->
+                    <div class="project-description">
+                        <p id="project-description"></p>
+                    </div>
+                    
+                    <!-- Project Skills -->
+                    <div class="project-skills">
+                        <h3>Technologies Used</h3>
+                        <div id="project-skills" class="skills-badges"></div>
+                    </div>
+                    
+                    <!-- Project Details -->
+                    <div class="project-details">
+                        <h3>Project Details</h3>
+                        <div id="project-details"></div>
+                    </div>
+                    
+                    <!-- Project Links -->
+                    <div class="project-links">
+                        <a id="github-link" href="#" target="_blank" rel="noopener" class="btn btn-outline" aria-label="View GitHub repository">
+                            <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                        </a>
+                        <a id="live-demo-link" href="#" target="_blank" rel="noopener" class="btn btn-primary" aria-label="View live demo">
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo
+                        </a>
+                    </div>
+                    
+                    <!-- Citations -->
+                    <div class="project-citations">
+                        <h3>Citations</h3>
+                        <ul id="project-citations"></ul>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Related Projects Section -->
+            <section class="related-projects">
+                <h2>Related Projects</h2>
+                <div class="row" id="project-related-projects">
+                    <!-- Related projects will be inserted here -->
+                </div>
+            </section>
+            
+            <!-- Navigation Links -->
+            <div class="project-navigation">
+                <a href="projects.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" id="footer"></footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle between dark and light themes" data-tooltip="Toggle Theme">
+        <i class="fas fa-moon" id="theme-icon" aria-hidden="true"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="js/core/utils.js"></script>
+    <script src="js/core/cache.js"></script>
+    <script src="js/core/theme.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/components/footer.js"></script>
+    <script src="js/components/loader.js"></script>
+    <script src="js/modules/projects.js"></script>
+    <script src="js/lib/markdown.js"></script>
+    <script src="js/core/init.js"></script>
+</body>
+</html>

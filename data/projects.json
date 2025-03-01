@@ -1,0 +1,244 @@
+[
+    {
+      "id": "skillbanc-ai-tutor",
+      "title": "Skillbanc AI Tutor",
+      "slug": "skillbanc-ai-tutor",
+      "image": "assets/images/ai-tutor.webp",
+      "thumbnail": "assets/images/ai-tutor-thumb.webp",
+      "alt": "AI Tutor Interface showing adaptive learning pipeline",
+      "description": "An adaptive learning pipeline for students with personalized recommendations and real-time feedback, leveraging machine learning to optimize learning paths.",
+      "shortDescription": "AI-powered adaptive learning system with personalized recommendations",
+      "featured": true,
+      "date": "2024-04-15",
+      "skills": [
+        "Python",
+        "AI Model Development",
+        "Flutter",
+        "Machine Learning"
+      ],
+      "category": "Artificial Intelligence",
+      "github": "https://github.com/TataSatyaPratheek/ai-tutor",
+      "liveDemo": "https://skillbanc.com/ai-tutor",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Built on Python and Flutter, this project enhanced student retention and learning outcomes through adaptive learning strategies."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Project Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Skillbanc AI Tutor is a sophisticated learning system that leverages machine learning algorithms to create personalized learning experiences. By analyzing user interactions, performance metrics, and learning patterns, the system adapts content delivery to match each student's unique needs."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key Features"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Personalized learning paths based on individual progress",
+            "Real-time feedback and assessment",
+            "Adaptive difficulty scaling",
+            "Engagement tracking and analytics",
+            "Cross-platform accessibility via Flutter"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical Implementation"
+        },
+        {
+          "type": "paragraph",
+          "text": "The system employs a Python backend with machine learning models built using TensorFlow and scikit-learn. The frontend is developed with Flutter to ensure cross-platform compatibility. The recommendation engine uses collaborative filtering and content-based approaches to suggest optimal learning resources."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/ai-tutor-architecture.webp",
+          "alt": "System architecture diagram for AI Tutor",
+          "caption": "High-level architecture of the Skillbanc AI Tutor system"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Outcomes and Impact"
+        },
+        {
+          "type": "paragraph",
+          "text": "Implementation of the AI Tutor led to a 27% improvement in student retention rates and a 35% increase in concept mastery compared to traditional learning methods. The system has been successfully deployed for over 1,000 students with consistently positive feedback."
+        }
+      ],
+      "citations": [
+        "Skillbanc.com Internship",
+        "User Behavior Analysis"
+      ],
+      "related_projects": [
+        "Machine Learning and Sovereign Credit Ratings"
+      ]
+    },
+    {
+      "id": "smart-helmet-prototype",
+      "title": "Smart Helmet Prototype",
+      "slug": "smart-helmet-prototype",
+      "image": "assets/images/smart-helmet.png",
+      "thumbnail": "assets/images/smart-helmet-thumb.png",
+      "alt": "Smart helmet prototype with sensors for athletic performance monitoring",
+      "description": "Developed a wearable device to monitor and visualize athletic performance, specifically focusing on boxing punch analysis and impact detection for enhanced safety.",
+      "shortDescription": "Wearable device for athletic performance monitoring and safety",
+      "featured": true,
+      "date": "2023-11-20",
+      "skills": [
+        "Sensor Integration",
+        "BLE Data Transmission",
+        "Data Visualization",
+        "Embedded Systems"
+      ],
+      "category": "IoT",
+      "github": "https://github.com/TataSatyaPratheek/smart-helmet",
+      "liveDemo": "",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Sensor integration and BLE were leveraged for real-time metrics, providing enhanced safety data during training."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Project Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Smart Helmet Prototype is a wearable device designed for combat sports athletes, particularly boxers. It integrates multiple sensors to monitor impact force, head acceleration, and movement patterns, providing valuable data to enhance both performance and safety."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key Features"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Real-time impact force measurement",
+            "Head acceleration and rotational tracking",
+            "Bluetooth Low Energy (BLE) data transmission",
+            "Mobile application for data visualization",
+            "Safety alert system for dangerous impacts"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical Implementation"
+        },
+        {
+          "type": "paragraph",
+          "text": "The helmet incorporates accelerometers, gyroscopes, and pressure sensors connected to a microcontroller that processes and transmits data via BLE. The companion mobile application receives, analyzes, and visualizes this data in real-time, providing immediate feedback to athletes and coaches."
+        },
+        {
+          "type": "image",
+          "src": "assets/images/smart-helmet-components.png",
+          "alt": "Components of the smart helmet system",
+          "caption": "Key components of the Smart Helmet prototype"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Outcomes and Impact"
+        },
+        {
+          "type": "paragraph",
+          "text": "Testing with amateur boxers showed a 40% improvement in punch technique through data-driven feedback. The concussion risk assessment feature has been praised by sports medicine professionals for its potential to reduce training-related injuries."
+        }
+      ],
+      "citations": [
+        "Skillbanc.com Internship"
+      ],
+      "related_projects": []
+    },
+    {
+      "id": "machine-learning-sovereign-credit-ratings",
+      "title": "Machine Learning and Sovereign Credit Ratings",
+      "slug": "machine-learning-sovereign-credit-ratings",
+      "image": "assets/images/credit-ratings.png",
+      "thumbnail": "assets/images/credit-ratings-thumb.png",
+      "alt": "Data visualization showing credit rating predictions",
+      "description": "Using machine learning models to forecast credit ratings, integrating economic and political factors to influence financial decisions and improve prediction accuracy.",
+      "shortDescription": "ML forecasting system for sovereign credit ratings",
+      "featured": false,
+      "date": "2023-06-10",
+      "skills": [
+        "Financial Modeling",
+        "AI",
+        "Statistical Analysis",
+        "Python",
+        "Data Visualization"
+      ],
+      "category": "Data Science",
+      "github": "https://github.com/TataSatyaPratheek/credit-rating-predictor",
+      "liveDemo": "",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Enhanced global credit rating predictions by integrating long-term financial data with machine learning techniques."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Project Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "This research project applies advanced machine learning techniques to predict sovereign credit ratings. By analyzing historical economic data, political stability metrics, and existing rating patterns, the model provides more accurate forecasts than traditional methods."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Key Features"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Multi-factor analysis incorporating 20+ economic indicators",
+            "Political stability assessment using NLP on news sources",
+            "Ensemble learning approach combining multiple models",
+            "Time-series forecasting with 85% accuracy",
+            "Interactive visualization dashboard"
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Technical Implementation"
+        },
+        {
+          "type": "paragraph",
+          "text": "The project utilized Python with scikit-learn and TensorFlow for model development. Feature engineering extracted relevant indicators from World Bank and IMF datasets. An ensemble of gradient boosting, random forest, and deep learning models was created to improve prediction robustness."
+        },
+        {
+          "type": "code",
+          "language": "python",
+          "code": "# Example of the ensemble model approach\nfrom sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier\nfrom sklearn.neural_network import MLPClassifier\nfrom sklearn.ensemble import VotingClassifier\n\n# Create individual models\nrf = RandomForestClassifier(n_estimators=100)\ngb = GradientBoostingClassifier(n_estimators=100)\nnn = MLPClassifier(hidden_layer_sizes=(100, 50))\n\n# Create voting ensemble\nensemble = VotingClassifier(\n    estimators=[('rf', rf), ('gb', gb), ('nn', nn)],\n    voting='soft'\n)"
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Outcomes and Impact"
+        },
+        {
+          "type": "paragraph",
+          "text": "The model achieved an 85% accuracy in predicting rating changes 3-6 months in advance, outperforming baseline models by 15%. The research was included in my MSc thesis at EDHEC and received recognition for its innovative approach to financial forecasting."
+        }
+      ],
+      "citations": [
+        "EDHEC MSc Thesis"
+      ],
+      "related_projects": [
+        "Skillbanc AI Tutor"
+      ]
+    }
+  ]

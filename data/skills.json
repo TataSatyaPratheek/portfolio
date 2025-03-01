@@ -1,0 +1,155 @@
+[
+    {
+      "category": "Programming Languages",
+      "skills": [
+        {
+          "name": "Python",
+          "level": "Advanced",
+          "icon": "assets/icons/python.svg",
+          "description": "Proficient in Python for data science, machine learning, and backend development",
+          "projects": ["Skillbanc AI Tutor", "Machine Learning and Sovereign Credit Ratings"],
+          "libraries": ["TensorFlow", "PyTorch", "scikit-learn", "Pandas", "Flask"]
+        },
+        {
+          "name": "SQL",
+          "level": "Intermediate",
+          "icon": "assets/icons/sql.svg",
+          "description": "Database design, optimization, and complex querying",
+          "projects": ["Skillbanc AI Tutor"],
+          "libraries": ["PostgreSQL", "MySQL", "SQLite"]
+        },
+        {
+          "name": "JavaScript",
+          "level": "Intermediate",
+          "icon": "assets/icons/javascript.svg",
+          "description": "Web development and interactive data visualizations",
+          "projects": [],
+          "libraries": ["React", "D3.js", "Node.js"]
+        },
+        {
+          "name": "Dart",
+          "level": "Intermediate",
+          "icon": "assets/icons/dart.svg",
+          "description": "Mobile application development with Flutter",
+          "projects": ["Skillbanc AI Tutor"],
+          "libraries": ["Flutter"]
+        }
+      ]
+    },
+    {
+      "category": "Data Science & AI",
+      "skills": [
+        {
+          "name": "Machine Learning",
+          "level": "Advanced",
+          "icon": "assets/icons/machine-learning.svg",
+          "description": "Development and optimization of ML models for various applications",
+          "projects": ["Skillbanc AI Tutor", "Machine Learning and Sovereign Credit Ratings"],
+          "frameworks": ["scikit-learn", "TensorFlow", "PyTorch"]
+        },
+        {
+          "name": "XGBoost",
+          "level": "Advanced",
+          "icon": "assets/icons/xgboost.svg",
+          "description": "Gradient boosting implementation for predictive modeling",
+          "projects": ["Skillbanc AI Tutor"],
+          "related": ["Machine Learning"]
+        },
+        {
+          "name": "Statistical Analysis",
+          "level": "Advanced",
+          "icon": "assets/icons/statistical-analysis.svg",
+          "description": "Hypothesis testing, regression analysis, and experimental design",
+          "projects": ["Machine Learning and Sovereign Credit Ratings"],
+          "tools": ["R", "Python", "SPSS"]
+        },
+        {
+          "name": "Data Visualization",
+          "level": "Intermediate",
+          "icon": "assets/icons/data-viz.svg",
+          "description": "Creating compelling visual representations of complex datasets",
+          "projects": ["Machine Learning and Sovereign Credit Ratings"],
+          "tools": ["Matplotlib", "Seaborn", "D3.js", "Tableau"]
+        }
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "skills": [
+        {
+          "name": "Azure",
+          "level": "Intermediate",
+          "icon": "assets/icons/azure.svg",
+          "description": "Cloud infrastructure, ML services, and application deployment",
+          "projects": [],
+          "services": ["Azure ML", "Azure Functions", "Cosmos DB"]
+        },
+        {
+          "name": "Git",
+          "level": "Advanced",
+          "icon": "assets/icons/git.svg",
+          "description": "Version control and collaborative development",
+          "projects": [],
+          "tools": ["GitHub", "GitLab"]
+        },
+        {
+          "name": "Docker",
+          "level": "Intermediate",
+          "icon": "assets/icons/docker.svg",
+          "description": "Containerization for consistent deployment environments",
+          "projects": [],
+          "related": ["DevOps"]
+        }
+      ]
+    },
+    {
+      "category": "Business Intelligence",
+      "skills": [
+        {
+          "name": "PowerBI",
+          "level": "Intermediate",
+          "icon": "assets/icons/powerbi.svg",
+          "description": "Creating interactive dashboards and business intelligence reports",
+          "projects": ["Skillbanc AI Tutor"],
+          "focus": ["Data Modeling", "DAX", "Report Design"]
+        },
+        {
+          "name": "Financial Modeling",
+          "level": "Intermediate",
+          "icon": "assets/icons/financial-modeling.svg",
+          "description": "Developing models for financial forecasting and decision-making",
+          "projects": ["Machine Learning and Sovereign Credit Ratings"],
+          "tools": ["Excel", "Python"]
+        }
+      ]
+    },
+    {
+      "category": "Mobile & IoT",
+      "skills": [
+        {
+          "name": "Flutter",
+          "level": "Intermediate",
+          "icon": "assets/icons/flutter.svg",
+          "description": "Cross-platform mobile app development",
+          "projects": ["Skillbanc AI Tutor"],
+          "focus": ["UI/UX", "State Management", "API Integration"]
+        },
+        {
+          "name": "Sensor Integration",
+          "level": "Intermediate",
+          "icon": "assets/icons/sensor.svg",
+          "description": "Integrating various sensors for data collection in physical devices",
+          "projects": ["Smart Helmet Prototype"],
+          "sensors": ["Accelerometers", "Gyroscopes", "Force Sensors"]
+        },
+        {
+          "name": "BLE Data Transmission",
+          "level": "Intermediate",
+          "icon": "assets/icons/ble.svg",
+          "description": "Wireless communication between devices using Bluetooth Low Energy",
+          "projects": ["Smart Helmet Prototype"],
+          "protocols": ["Bluetooth 5.0", "GATT"]
+        }
+      ]
+    }
+  ]

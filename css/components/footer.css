@@ -1,0 +1,129 @@
+/*
+ * footer.css - Styles for the site footer
+ */
+
+ .footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 4rem 0 2rem;
+    position: relative;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .footer-inner {
+    position: relative;
+  }
+  
+  .footer-title {
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+  
+  .footer-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-accent);
+  }
+  
+  .footer-description {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  /* Footer Links */
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-menu li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-menu a {
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .footer-menu a::before {
+    content: '›';
+    margin-right: 0.5rem;
+    color: var(--color-accent);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-menu a:hover,
+  .footer-menu a:focus {
+    color: var(--text-primary);
+    transform: translateX(5px);
+  }
+  
+  .footer-menu a:hover::before,
+  .footer-menu a:focus::before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Social Links */
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover,
+  .social-link:focus {
+    background-color: var(--color-accent);
+    color: var(--text-on-accent);
+    transform: translateY(-5px);
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767px) {
+    .footer [class^="col-"] {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  /* Accessibility */
+  .footer a:focus {
+    outline: 3px solid var(--color-focus);
+    outline-offset: 3px;
+  }

@@ -1,0 +1,57 @@
+<!-- Error Message Component -->
+<div class="error-container">
+    <div class="error-icon">
+        <i class="fas fa-exclamation-circle" aria-hidden="true"></i>
+    </div>
+    <div class="error-content">
+        <h2 class="error-title">Unable to Load Content</h2>
+        <p class="error-message">We're having trouble loading this content right now. Please try again later or refresh the page.</p>
+        <button class="btn btn-primary error-retry">
+            <i class="fas fa-sync-alt" aria-hidden="true"></i> Try Again
+        </button>
+    </div>
+</div>
+
+<style>
+/* Error Message Styles */
+.error-container {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.error-icon {
+    font-size: 3rem;
+    color: var(--color-danger);
+    margin-bottom: 1.5rem;
+}
+
+.error-title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.error-retry {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.error-retry i {
+    transition: transform 0.3s ease;
+}
+
+.error-retry:hover i {
+    transform: rotate(180deg);
+}
+</style>
