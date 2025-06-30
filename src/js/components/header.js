@@ -72,8 +72,8 @@ const Header = {
                 (href === currentPage) ||
                 (currentPage === 'index.html' && href === 'index.html') ||
                 (currentPage === '' && href === 'index.html') ||
-                (currentPage.includes('project-detail') && href === 'projects.html') ||
-                (currentPage.includes('blog-detail') && href === 'blog.html');
+                (currentPage.includes('project-detail') && href === 'pages/projects.html') ||
+                (currentPage.includes('blog-detail') && href === 'pages/blog.html');
 
             // Add active class and aria-current to the active link
             if (isActive) {
@@ -267,13 +267,13 @@ const Header = {
                                 <a href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class="nav-link">About</a>
+                                <a href="pages/about.html" class="nav-link">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="projects.html" class="nav-link">Projects</a>
+                                <a href="pages/projects.html" class="nav-link">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact</a>
+                                <a href="pages/contact.html" class="nav-link">Contact</a>
                             </li>
                         </ul>
                     </nav>

@@ -90,7 +90,7 @@ const Loader = {
         switch (type) {
             case 'card':
                 return `
-                    <div class="card-skeleton" aria-hidden="true">
+                    <div class="card-skeleton.html" aria-hidden="true">
                         <div class="skeleton-image"></div>
                         <div class="skeleton-body">
                             <div class="skeleton-title"></div>
@@ -103,7 +103,7 @@ const Loader = {
                 
             case 'list':
                 return `
-                    <div class="list-skeleton" aria-hidden="true">
+                    <div class="list-skeleton.html" aria-hidden="true">
                         <div class="skeleton-item">
                             <div class="skeleton-item-icon"></div>
                             <div class="skeleton-item-content">
@@ -123,7 +123,7 @@ const Loader = {
                 
             case 'detail':
                 return `
-                    <div class="detail-skeleton" aria-hidden="true">
+                    <div class="detail-skeleton.html" aria-hidden="true">
                         <div class="skeleton-header">
                             <div class="skeleton-title"></div>
                             <div class="skeleton-meta">

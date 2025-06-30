@@ -146,7 +146,7 @@ const SkillsModule = {
         let projectsHTML = '';
         if (skill.projects && skill.projects.length > 0) {
             const projectLinks = skill.projects.map(project => 
-                `<a href="projects.html#${project.toLowerCase().replace(/\s+/g, '-')}" class="skill-project-link">${project}</a>`
+                `<a href="pages/projects.html#${project.toLowerCase().replace(/\s+/g, '-')}" class="skill-project-link">${project}</a>`
             ).join('');
             
             projectsHTML = `

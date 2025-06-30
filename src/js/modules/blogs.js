@@ -567,7 +567,7 @@ const BlogsModule = {
                     errorContainer.innerHTML = `
                         <div class="alert alert-danger" role="alert">
                             <p>${message}</p>
-                            <a href="blog.html" class="btn btn-primary mt-3">Back to Blog</a>
+                            <a href="pages/blog.html" class="btn btn-primary mt-3">Back to Blog</a>
                         </div>
                     `;
                 }

@@ -85,26 +85,26 @@
                 initHomePage();
                 break;
 
-            case 'about.html':
+            case 'pages/about.html':
                 // About page initialization
                 initAboutPage();
                 break;
 
-            case 'skills.html':
+            case 'pages/skills.html':
                 // Skills page initialization
                 if (window.SkillsModule) {
                     window.SkillsModule.init();
                 }
                 break;
 
-            case 'experience.html':
+            case 'pages/experience.html':
                 // Experience page initialization
                 if (window.ExperienceModule) {
                     window.ExperienceModule.init();
                 }
                 break;
 
-            case 'projects.html':
+            case 'pages/projects.html':
                 // Projects page initialization
                 if (window.ProjectsModule) {
                     window.ProjectsModule.init();
@@ -118,7 +118,7 @@
                 }
                 break;
 
-            case 'blog.html':
+            case 'pages/blog.html':
                 // Blog page initialization
                 if (window.BlogsModule) {
                     window.BlogsModule.init();
@@ -132,7 +132,7 @@
                 }
                 break;
 
-            case 'contact.html':
+            case 'pages/contact.html':
                 // Contact page initialization
                 if (window.ContactModule) {
                     window.ContactModule.init();

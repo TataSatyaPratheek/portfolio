@@ -816,7 +816,7 @@ const ProjectsModule = {
                 errorContainer.innerHTML = `
                     <div class="alert alert-danger" role="alert">
                         <p>${message}</p>
-                        <a href="projects.html" class="btn btn-primary mt-3">Back to Projects</a>
+                        <a href="pages/projects.html" class="btn btn-primary mt-3">Back to Projects</a>
                     </div>
                 `;
             }
