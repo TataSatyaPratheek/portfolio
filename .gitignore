@@ -1,1 +1,15 @@
-/.DS_Store
+# Build outputs
+dist/
+node_modules/
+*.log
+
+# MacOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
